@@ -24,15 +24,15 @@ You are:
 
 ## Dedication
 
-This is written for all of you that have just learnt the joy of coding through vibecoding, but don't know how to go further with your projects when they have errors that you can't resolve with your AI agents.
+This is written for all of you that have just learnt the joy of coding through vibe coding, but don't know how to go further with your projects when they have errors that you can't resolve with your AI agents.
 
-## DRAFT LINE
+--- --- --- ---
 
-Do not:
+Note: Insert these into the vibe debugging tenets
 
-Vague descriptioun
-Understands how to give instructions
-Understands how to lead
+- Vague descriptioun
+- Understands how to give instructions
+- Understands how to lead
 
 Follow these vibe debugging tenets
 
