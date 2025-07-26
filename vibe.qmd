@@ -1,12 +1,15 @@
 ---
-title: "Vibe Debugging"
+title: Vibe Debugging
 author: tnwei
 format:
   revealjs:
     center-title-slide: true
+    theme: default
   html:
     code-fold: true
 ---
+
+## {background-image=./talk_poster_buildclubkl2025.jpeg background-size=contain}
 
 ## When you vibe code
 
@@ -22,51 +25,168 @@ You are:
 - AI stopped taking your instructions
 - How can something so smart be so stupid?
 
+## {.center}
+
+Let's **vibe debug** your vibe'd code
+
+## Who
+
+- Nian Wei
+- Tech @ Rosary Labs
+
 ## Dedication
 
-This is written for all of you that have just learnt the joy of coding through vibe coding, but don't know how to go further with your projects when they have errors that you can't resolve with your AI agents.
+This is for you if you want your best friend to code smarter
 
---- --- --- ---
+## 1. Do not roleplay {.center}
 
-Note: Insert these into the vibe debugging tenets
+- No: This is so frustrating! How many times do I have you tell you that I want ... _(another two paragraphs)_
+- Yes: Help me with this some more. I still see this error ...
 
-- Vague descriptioun
-- Understands how to give instructions
-- Understands how to lead
+## 2. Show your best friend what you see {.center}
 
-Follow these vibe debugging tenets
+::: {.notes}
+Imagine sitting in a completely dark room. The only thing you have is a whatsapp chat where people ask you questions. Your friend is not an almighty god, it is an eager pupy with blindfolds.
+Your best friend doesn't see what you see. It is guessing at what you see! Help it
+:::
+- No: It is not working!
+- Yes: I am getting a 404 not found error
 
-1. Give error msg to LLM to debug. LLMs don't see what you see. The more information, the more it can help you
 
-Instead of "it don't work"
-Say "I am getting a 404 not found error"
+## 2. Show your best friend what you see {.center}
 
-2. Copy-paste the whole stacktrace and give it to the LLM
+- Yes: I am getting a 404 not found error
+- Very yes: I am getting a 404 not found error, pasting you the stacktrace below: ...
 
-Instead of saying "404 not found error"
-Say "Here is the stacktrace resulting in a 404 not found error"
+::: {.notes}
+TODO: Show examples here from mine?
+:::
 
-3. Tell it what other things you have tried. In general, long messages over short messages
+## 3. Tell your best friend what you want {.center}
 
-Instead of saying "404 not found error"
-Say "I tried A and B but I still get 404 not found error, here is the stacktrace"
+Be specific, don't be vague
 
-4. If AI can't fix things for you, ask it to explain to you what is going on instead. Use a new thread to check on what is going on. It gives more information on how to prompt next! 
+- No: It is broken, please fix
+- Yes: I want the div to be stacked vertically, not horizontally like it is now
 
-Instead of saying "I still get 404 not found error!"
-Say "I am still getting 404 not found error. Can you explain how the previous methods are supposed to resolve them and think about why this current method is still not working?"
+## 3. Tell your best friend what you want {.center}
 
-5. Keep a main thread troubleshooting, and use a different convo to ask about smaller things to prevent derailing the main thread
+- (sigh), yes: Like I said earlier, I want the div to be stacked vertically. Now it is horizontal
 
-6. Use google to look up things, especially if your framework is new! Good example are when you are working with genai tooling yourself that are not in stable mode and evolve quickly
+You do have to repeat yourself sometimes
 
-7. Read the stacktrace yourself and reason about it! Save tokens, and you debug even n better by learning how to avoid the bug in the future! The machine context length is limited but yours is always available
+## 4. Tell your best friend what other things you have tried {.center}
+
+Else your first few steps will be the same every time
+
+- No: It doesn't work!!! 
+- Yes: We have tried A and B and C, but we still get this 404 not found error
+
+## {.center}
+
+**Why do I have to type so much? Can't AI do this for me?** 
+
+- Trains are not useful without train tracks
+- Your best friend is not helpful without your direction!
+- You have to steer your best friend
+- You are free to let it go wherever it wants if you are willing to accept the outcome
+
+## 5. Settle for information when you can't get answers {.center}
+
+- No: _(after 5 tries)_ I still get 404 not found error!
+- Yes: We still have 404 not found error, so change of plan. Can you explain how the previous methods are supposed to resolve them and think about why this current method is still not working?
+
+## 6. Checkpoint your debugging, save your progress {.center}
+
+- Yes: Give me a summary of everything we've spoke about thus far so that I can ask an expert
+- Yes: Before we continue further, can you summarize the issue, the solutions tried thus far, the results, any relevant observations, and further thoughts?
+
+## 7. Rollback your chat / start over if stuck {.center}
+
+Going down a long convo when stuck is not helpful because:
+
+- Tokens get expensive (token usage is a widening pyramid)
+- LLMs are autoregressive, all previous text will shape their thought direction. Once distracted, stays distracted
+
+## 8. Use multiple chats when needed {.center}
+
+Keep your main convo focused, open a new one to ask for clarification.
+
+:::{.notes}
+You orchestrate and manage the context
+Keep your conversation shorter for token cost reasons
+Prevent from getting derailed when some topics are really big
+:::
+
+## 9. Google certain things yourself when stuck {.center}
+
+- All the context is with you. You know best what is relevant or not. So your Googling is better than LLM web search
+- Best friend's knowledge is outdated sometimes
+- Lost on what to do with the Google results? See previous page ;)
+
+:::{.notes}
+Web search is fine for simple things. We are here if you are stuck.
+Also saves tokens when your services are being billed by num messages
+:::
+
+## 10. Take time to understand the stacktrace yourself {.center}
+
+Best way to find out:
+
+- What to ask best friend
+- How to avoid getting stuck
+
+## 10. Take time to understand the stacktrace yourself {.center}
+
+- You are the constant across all the tools you use
+- You are the shared context across all of your tools
+- Your memory lasts much longer
+- You don't run out of tokens
+- You are always online
+
+## Tenets of vibe debugging {.smaller}
+
+1. Do not roleplay
+2. Show your best friend what you see
+3. Tell your best friend what you want
+4. Tell your best friend what other things you have tried
+5. Settle for information when you can't get answers
+6. Checkpoint your debugging, save your progress
+7. Rollback your chat / start over if stuck
+8. Use multiple chats when needed
+9. Google certain things yourself when stuck
+10. Take time to understand the stacktrace yourself
+
+## {.center}
+
+**If I'm typing and thinking so much anyway, maybe I am better off writing code myself**
+
+- Yes at some point
+- AI is good for getting new apps off the ground
+- Maintaining apps with increasing complexity needs a lot of context and understanding
+- ... that current gen AI doesn't have
+
+## The serious skills behind vibe coding {.center}
+
+TODO: wrap up this one
+
+- Debugging is skill
+- Vibe debugging is technical leadership
+
+Becoming a good programmer needs both, and the steps I've given you above 
+
+## Thanks for listening! {.center}
+
+Vibe Debugging @ Build Club KL
+
+bento.me/tnwei
+
+<!-- 
+Cutting floor
 
 Run through examples of properly done debugging by various skill levels
 
 - .env var is misspelt and thus seeing all sorts of errors, pusing satu bulatan barulah come back to find out what is going on
 - simple mistake on chat apps repeating all the conversations instead of doing the 
 - gnarly halfway code written and then ran out of credits where information needs to be passed from a game to another
-
-
-Trinkets - 2 part QR arrays that we can use for the 
+-->
