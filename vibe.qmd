@@ -166,14 +166,23 @@ Best way to find out:
 - Maintaining apps with increasing complexity needs a lot of context and understanding
 - ... that current gen AI doesn't have
 
-## The serious skills behind vibe coding {.center}
+## The serious skills behind vibe debugging {.center}
 
-TODO: wrap up this one
+- Debugging itself is investigative journalism
+- Vibe debugging is providing technical leadership to an AI detective sidekick
 
-- Debugging is skill
-- Vibe debugging is technical leadership
+:::{.notes}
+Most of the time the AI is doing the heavy lifting
+You do the most important thing: decide
+You decide what route to take
+Sometimes you decide your sidekick is overwhelmed, and you choose to step in directly and debug it yourself
+:::
 
-Becoming a good programmer needs both, and the steps I've given you above 
+These are actual serious skills to be a good coder
+
+## {.center}
+
+**Vibe coding might not make you a good coder, but vibe debugging will**
 
 ## Thanks for listening! {.center}
 
