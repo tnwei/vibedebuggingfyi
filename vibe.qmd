@@ -11,7 +11,7 @@ format:
 
 ## {background-image=./talk_poster_buildclubkl2025.jpeg background-size=contain}
 
-## When you vibe code
+## When you vibe code {.center}
 
 You are:
 
@@ -19,7 +19,7 @@ You are:
 - In the zone
 - Locked tf in
 
-## But then, as your app gets complex ...
+## But then, as your app gets complex ... {.center}
 
 - You burn through more tokens debugging your app than building it
 - AI stopped taking your instructions
@@ -29,14 +29,14 @@ You are:
 
 Let's **vibe debug** your vibe'd code
 
-## Who
+## Who {.center}
 
 - Nian Wei
-- Tech @ Rosary Labs
+- Responsible for all the things that go beep boop @ Rosary Labs
 
-## Dedication
+## Dedication {.center}
 
-This is for you if you want your best friend to code smarter
+This is for you if you want your AI best friend to code smarter
 
 ## 1. Do not roleplay {.center}
 
